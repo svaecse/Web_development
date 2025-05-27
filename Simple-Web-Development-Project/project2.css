@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  background-color: rgba(10, 10, 10, 0.308);
+}
+
+#navbar::before {
+  content: "";
+  /* background-color: rgba(0, 0, 0, 0); */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#logo {
+  margin: 10px;
+}
+#logo img {
+  margin: 10px;
+  width: 45px;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style-type: none;
+  font-size: 0.9rem;
+
+  font-family: "Baloo 2", cursive;
+}
+#navbar ul li a {
+  color: white;
+  /* display: block; */
+  padding: 9px;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: rgb(247, 243, 243);
+  border-radius: 14px;
+}
+#searchbar {
+  color: rgb(15, 15, 15);
+  width: 200px;
+  text-align: center;
+  margin: 30px;
+  font-size: 1rem;
+  background-color: rgb(241, 238, 233);
+  border-radius: 20px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6%;
+  height: 350px;
+  /* background-color: rgba(121, 86, 47, 0.253); */
+}
+.home h1 {
+  text-transform: uppercase;
+  padding: 12px;
+  color: rgb(204, 238, 11);
+  font-family: "Baloo 2", cursive;
+
+  font-size: 2rem;
+  background-color: rgba(168, 160, 160, 0.253);
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.home p {
+  font-family: "Baloo 2", cursive;
+  color: rgb(255, 255, 255);
+  padding: 0.3%;
+  font-size: 1.3rem;
+}
+.home button {
+  font-size: 1.5rem;
+  background-color: rgba(100, 79, 79, 0.493);
+  color: rgb(175, 245, 13);
+  margin: 15px;
+  padding: 6px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home button:hover {
+  background-color: rgba(146, 21, 21, 0.74);
+  color: rgb(243, 237, 237);
+  padding: 6px 26px;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 20px;
+}
+.home::before {
+  content: "";
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  background: url(bg8.jpg) no-repeat center center/cover;
+
+  z-index: -1;
+  opacity: 0.99;
+  top: 0;
+}
+.services-container {
+  margin: 10px;
+  /* padding: 20px; */
+}
+.primary {
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  color: rgb(15, 15, 15);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.service {
+  background-color: rgba(156, 151, 151, 0.219);
+  display: block;
+  margin: 0.8% auto;
+  width: 30%;
+}
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+.foods {
+  border: 2px solid rgb(100, 20, 20);
+  margin: 8px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(226, 221, 218, 0.541);
+  box-shadow: 5px 5px 15px rgb(161, 159, 159);
+}
+.foods:hover {
+  box-shadow: 5px 5px 20px rgba(38, 194, 221, 0.507);
+  /* background-color: gradientrgba(230, 172, 130, 0.61); */
+  background: radial-gradient(
+    rgba(167, 46, 46, 0.308),
+    rgba(155, 202, 69, 0.466)
+  );
+}
+.about {
+  height: 10px;
+  width: 100%;
+}
+#clients {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 8%;
+}
+.client {
+  background-color: rgba(248, 242, 242, 0.623);
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+#clients::before {
+  content: "";
+  position: absolute;
+  background: url(bg4.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#clients img {
+  border: 2px solid rgb(133, 50, 50);
+  margin: 5px 30px;
+  border-radius: 50%;
+}
+#clients img:hover {
+  border: 4px solid rgb(34, 238, 7);
+  transition: ease-out 0.7s;
+  transform: rotate(360deg);
+  box-shadow: 10px 10px 10px 10px rgb(188, 243, 188);
+}
